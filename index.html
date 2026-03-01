@@ -628,9 +628,7 @@ input:checked + .slider::before { transform: translateX(14px); }
     }
 
     renderCarousel();
-    // Small initial delay so first render is visible before sliding starts
-    setTimeout(() => {
-      autoSlide = setInterval(nextSlide, 4000);
+    autoSlide = setInterval(nextSlide, 4000);
   }
 
   document.getElementById("carousel-window")
